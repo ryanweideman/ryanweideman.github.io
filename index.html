@@ -4,11 +4,107 @@
   <meta charset="UTF-8" />
   <title>Ryan Weideman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+  <style>
+    body {
+      background: #fdfdfd;
+      padding: 0 1rem;
+    }
+
+    main {
+      max-width: 880px;
+      margin: auto;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons img {
+      width: 35px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .about-me {
+      overflow: hidden;
+    }
+
+    .about-me img {
+      float: right;
+      margin-left: 2rem;
+      max-width: 200px;
+      border: 4px solid #eee;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    @media (max-width: 640px) {
+      .about-me img {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm Ryan</h1>
-  </header>
+  <main>
+    <img src="images/footer.JPG" alt="Banner" class="banner" />
+
+    <h1>Hello! I'm Ryan Weideman.</h1>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ryan-weideman" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/ryanweideman" target="_blank">
+        <img src="images/github.png" alt="GitHub" />
+      </a>
+    </div>
+
+    <hr />
+
+    <section class="about-me">
+      <img src="images/ryan.jpg" alt="Ryan Weideman" />
+
+      <p>
+        I'm a senior software engineer at <a href="https://www.wealthfront.com/" target="_blank">Wealthfront</a>, a fintech company that provides automated investing and modern banking features in a single platform. I build the backend platforms that maximize client earnings, enable speedy withdrawals, and facilitate reliable movement of hundreds of millions of dollars daily.
+      </p>
+      <p>
+        Previously, I worked as a robotics engineer at Amazon on the <a href="https://www.amazon.com/Introducing-Amazon-Astro/dp/B078NSDFSB" target="_blank">Amazon Astro Home Robot</a>, developing the embedded autonomy platform responsible for motion controls and navigation.
+      </p>
+      <p>
+        I'm passionate about building scalable systems and infrastructure that interface with the real world to solve meaningful problems.
+      </p>
+      <p>
+        I hold M.S. and B.S. degrees in Electrical and Computer Engineering from Cal Poly, San Luis Obispo.
+      </p>
+
+      <p>
+        Feel free to contact me on
+        <a href="https://www.linkedin.com/in/ryan-weideman" target="_blank">LinkedIn</a>!
+      </p>
+
+      <hr style="clear: both" />
+    </section>
+
+    <footer>
+      &copy; 2025 Ryan Weideman
+    </footer>
+  </main>
 </body>
 </html>
